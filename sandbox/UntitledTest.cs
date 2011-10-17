@@ -27,7 +27,7 @@ public class UntitledTest
     {
         string input = "*\n*\n*";
         string result = new Game().NextGeneration(input);
-        string expected = ".*.";
+        string expected = ".\n*\n.";
         Assert.AreEqual(expected, result);
     }
 
