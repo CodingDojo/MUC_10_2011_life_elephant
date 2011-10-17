@@ -24,6 +24,30 @@ public class Game
         return GenerateResult();
     }
 
+    private bool TestCell(x, y)
+    {
+        var neighbours = CountNeighbours(x, y);
+        if (neighbours == 2)
+            return true;
+        if (neighbours == 0)
+            return false;
+    }
+
+    private int CountNeighbours(x, y)
+    {
+        int result = 0;
+        if (SafeIsNeighbour(x - 1, y) result += 1;
+        if (SafeIsNeighbour(x + 1, y) result += 1;
+        return result;
+    }
+
+    private bool SafeIsNeighbour(x, y)
+    {
+        if (x < 0) return false;
+        if (x > width) return false;
+        return originalArray[x, y];
+    }
+
     private string GenerateResult()
     {
         var lines = new List<string>();
