@@ -1,5 +1,5 @@
 ..F
-Tests run: 2, Failures: 1, Not run: 0, Time: 0.063 seconds
+Tests run: 2, Failures: 1, Not run: 0, Time: 0.058 seconds
 
 Test Case Failures:
 1) UntitledTest.CellWithTwoLivingNeighboursLives : System.IndexOutOfRangeException : Array index is out of range.
