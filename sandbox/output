@@ -1,8 +1,9 @@
+Untitled.cs(81,24): warning CS0219: The variable `line' is assigned but its value is never used
 Untitled.cs(28,18): warning CS0169: The private method `Game.TestCell(int, int)' is never used
 Untitled.cs(52,20): warning CS0169: The private method `Game.GenerateResult()' is never used
-Compilation succeeded - 2 warning(s)
+Compilation succeeded - 3 warning(s)
 .F.F
-Tests run: 2, Failures: 2, Not run: 0, Time: 0.063 seconds
+Tests run: 2, Failures: 2, Not run: 0, Time: 0.069 seconds
 
 Test Case Failures:
 1) UntitledTest.CellWithLessThanTwoLivingNeighboursDies :   Expected string length 5 but was 0. Strings differ at index 0.

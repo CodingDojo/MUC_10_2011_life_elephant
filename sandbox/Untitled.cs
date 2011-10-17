@@ -73,13 +73,14 @@ public class Game
         
         originalArray = new bool[this.width, this.height];        
         resultArray = new bool[this.width, this.height];        
+return;
 
         for(int x = 0; x < this.width; x++)
         {
             for(int y = 0; y < this.height; y++)
             {
                 string line = lines[y];
-                //originalArray[x,y] = line[x] == '*';
+                originalArray[x,y] = line[x] == '*';
             }
         }
     }
