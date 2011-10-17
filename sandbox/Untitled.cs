@@ -43,8 +43,9 @@ public class Game
 
     private bool SafeIsNeighbour(int x, int y)
     {
-        if (x <= 0) return false;
+        if (x < 0) return false;
         if (x >= width) return false;
+        return false;
         return originalArray[x, y];
     }
 
