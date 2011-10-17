@@ -36,8 +36,8 @@ public class Game
     private int CountNeighbours(int x, int y)
     {
         int result = 0;
-        if (SafeIsNeighbour(x - 1, y) result += 1;
-        if (SafeIsNeighbour(x + 1, y) result += 1;
+        if (SafeIsNeighbour(x - 1, y)) result += 1;
+        if (SafeIsNeighbour(x + 1, y)) result += 1;
         return result;
     }
 
