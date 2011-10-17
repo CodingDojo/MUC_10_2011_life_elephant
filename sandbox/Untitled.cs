@@ -67,7 +67,7 @@ public class Game
     private void GenerateArrays(string input)
     {
         string[] lines;
-        if(input.indexOf("\n") > -1)
+        if(input.IndexOf("\n") > -1)
         {
             lines = input.Split('\n');
         }
