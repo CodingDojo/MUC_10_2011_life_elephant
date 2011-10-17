@@ -47,8 +47,8 @@ public class Game
         if (SafeIsNeighbour(x, y + 1)) result += 1;
         if (SafeIsNeighbour(x - 1, y - 1)) result += 1;
         if (SafeIsNeighbour(x + 1, y + 1)) result += 1;
-       // if (SafeIsNeighbour(x + 1, y - 1)) result += 1;
-       // if (SafeIsNeighbour(x - 1, y + 1)) result += 1;
+        if (SafeIsNeighbour(x + 1, y - 1)) result += 1;
+        if (SafeIsNeighbour(x - 1, y + 1)) result += 1;
         return result;
     }
 
