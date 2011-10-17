@@ -27,11 +27,14 @@ public class Game
     private bool TestCell(int x, int y)
     {
         var neighbours = CountNeighbours(x, y);
-        if (neighbours == 2)
-            return true;
-        if (neighbours == 3)
-            return true;
-       
+        if (originalArray[x, y])
+        {
+           if (neighbours == 2)
+                return true;
+            if (neighbours == 3)
+                return true;
+        }
+
         return false;
     }
 
@@ -44,8 +47,8 @@ public class Game
         if (SafeIsNeighbour(x, y + 1)) result += 1;
         if (SafeIsNeighbour(x - 1, y - 1)) result += 1;
         if (SafeIsNeighbour(x + 1, y + 1)) result += 1;
-        if (SafeIsNeighbour(x + 1, y - 1)) result += 1;
-        if (SafeIsNeighbour(x - 1, y + 1)) result += 1;
+       // if (SafeIsNeighbour(x + 1, y - 1)) result += 1;
+       // if (SafeIsNeighbour(x - 1, y + 1)) result += 1;
         return result;
     }
 
