@@ -30,7 +30,7 @@ public class Game
         if (neighbours == 2)
             return true;
        
-            return false;
+        return false;
     }
 
     private int CountNeighbours(int x, int y)
