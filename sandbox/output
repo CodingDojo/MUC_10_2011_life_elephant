@@ -1,3 +1,2 @@
-Untitled.cs(39,44): error CS1525: Unexpected symbol `result'
-Untitled.cs(40,44): error CS1525: Unexpected symbol `result'
-Compilation failed: 2 error(s), 0 warnings
+Untitled.cs(27,18): error CS0161: `Game.TestCell(int, int)': not all code paths return a value
+Compilation failed: 1 error(s), 0 warnings

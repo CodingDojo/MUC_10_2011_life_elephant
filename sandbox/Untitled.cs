@@ -29,7 +29,7 @@ public class Game
         var neighbours = CountNeighbours(x, y);
         if (neighbours == 2)
             return true;
-        if (neighbours == 0)
+       
             return false;
     }
 
