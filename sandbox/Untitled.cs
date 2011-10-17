@@ -34,6 +34,10 @@ public class Game
             if (neighbours == 3)
                 return true;
         }
+        else if(neighbours == 3)
+        {
+            return true;
+        }
 
         return false;
     }
