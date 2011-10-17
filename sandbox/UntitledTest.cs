@@ -31,5 +31,13 @@ public class UntitledTest
         Assert.AreEqual(expected, result);
     }
 
+    [Test]
+    public void CellWithThreeLivingNeighboursLives()
+    {
+        string input = "**\n**";
+        string result = new Game().NextGeneration(input);
+        string expected = "**\n**";
+        Assert.AreEqual(expected, result);
+    }
 }
 
