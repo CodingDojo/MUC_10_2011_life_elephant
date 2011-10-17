@@ -1,17 +1,18 @@
-Untitled.cs(8,21): warning CS0649: Field `Game.resultArray' is never assigned to, and will always have its default value `null'
-Compilation succeeded - 1 warning(s)
 .F.F
-Tests run: 2, Failures: 2, Not run: 0, Time: 0.056 seconds
+Tests run: 2, Failures: 2, Not run: 0, Time: 0.064 seconds
 
 Test Case Failures:
-1) UntitledTest.CellWithLessThanTwoLivingNeighboursDies : System.NullReferenceException : Object reference not set to an instance of an object
+1) UntitledTest.CellWithLessThanTwoLivingNeighboursDies : System.IndexOutOfRangeException : Array index is out of range.
+at Game.SafeIsNeighbour (Int32 x, Int32 y) [0x00000]
+at Game.CountNeighbours (Int32 x, Int32 y) [0x00000]
+at Game.TestCell (Int32 x, Int32 y) [0x00000]
 at Game.NextGeneration (System.String input) [0x00000]
 at UntitledTest.CellWithLessThanTwoLivingNeighboursDies () [0x00000]
 at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[],System.Exception&)
 at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000]
 
 2) UntitledTest.CellWithTwoLivingNeighboursLives : System.IndexOutOfRangeException : Array index is out of range.
-at Game.GenerateOriginalArray (System.String input) [0x00000]
+at Game.GenerateArrays (System.String input) [0x00000]
 at Game.NextGeneration (System.String input) [0x00000]
 at UntitledTest.CellWithTwoLivingNeighboursLives () [0x00000]
 at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[],System.Exception&)
