@@ -1,2 +1,12 @@
-Untitled.cs(20,42): error CS0103: The name `TestCell' does not exist in the current context
-Compilation failed: 1 error(s), 0 warnings
+Untitled.cs(27,28): error CS1001: Identifier expected
+Untitled.cs(27,31): error CS1001: Identifier expected
+Untitled.cs(27,28): error CS0100: The parameter name `NeedSomeGeneratorHere' is a duplicate
+Untitled.cs(36,34): error CS1001: Identifier expected
+Untitled.cs(36,37): error CS1001: Identifier expected
+Untitled.cs(36,34): error CS0100: The parameter name `NeedSomeGeneratorHere' is a duplicate
+Untitled.cs(39,44): error CS1525: Unexpected symbol `result'
+Untitled.cs(40,44): error CS1525: Unexpected symbol `result'
+Untitled.cs(44,35): error CS1001: Identifier expected
+Untitled.cs(44,38): error CS1001: Identifier expected
+Untitled.cs(44,35): error CS0100: The parameter name `NeedSomeGeneratorHere' is a duplicate
+Compilation failed: 11 error(s), 0 warnings

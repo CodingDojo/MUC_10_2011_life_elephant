@@ -24,7 +24,7 @@ public class Game
         return GenerateResult();
     }
 
-    private bool TestCell(x, y)
+    private bool TestCell(int x, int y)
     {
         var neighbours = CountNeighbours(x, y);
         if (neighbours == 2)
@@ -33,7 +33,7 @@ public class Game
             return false;
     }
 
-    private int CountNeighbours(x, y)
+    private int CountNeighbours(int x, int y)
     {
         int result = 0;
         if (SafeIsNeighbour(x - 1, y) result += 1;
@@ -41,7 +41,7 @@ public class Game
         return result;
     }
 
-    private bool SafeIsNeighbour(x, y)
+    private bool SafeIsNeighbour(int x, int y)
     {
         if (x < 0) return false;
         if (x > width) return false;
