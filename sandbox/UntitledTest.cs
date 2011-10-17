@@ -59,7 +59,7 @@ public class UntitledTest
     }
 
     [Test]
-    public void CellWithMoreThanThreeLivingNeighboursDies()
+    public void CellWithMoreThanThreeIn3x3GridLivingNeighboursDies()
     {
         string input = "***\n.*.\n***";
         string result = new Game().NextGeneration(input);
@@ -67,6 +67,14 @@ public class UntitledTest
         Assert.AreEqual(expected, result);
     }
 
+    [Test]
+    public void CellWithMoreThanThreeIn2x2GridLivingNeighboursDies()
+    {
+        string input = "**\n**\n**";
+        string result = new Game().NextGeneration(input);
+        string expected = "**\n..\n**";
+        Assert.AreEqual(expected, result);
+    }
 
 }
 

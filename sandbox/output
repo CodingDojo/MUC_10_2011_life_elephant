@@ -1,3 +1,4 @@
-UntitledTest.cs(66,16): error CS0128: A local variable named `input' is already defined in this scope
-UntitledTest.cs(64,16): (Location of the symbol related to previous error)
-Compilation failed: 1 error(s), 0 warnings
+.......
+Tests run: 7, Failures: 0, Not run: 0, Time: 0.030 seconds
+
+
