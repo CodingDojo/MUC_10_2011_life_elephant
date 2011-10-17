@@ -66,16 +66,7 @@ public class Game
 
     private void GenerateArrays(string input)
     {
-        string[] lines;
-        if(input.IndexOf("\n") > -1)
-        {
-            lines = input.Split('\n');
-        }
-        else
-        {
-            lines = new [] { input };
-        }
-
+        string[] lines = input.Split('\n');
         this.width = lines.Length;
         this.height = lines[0].Length;
         

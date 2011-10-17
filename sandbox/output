@@ -1,2 +1,12 @@
-Untitled.cs(70,18): error CS1061: Type `string' does not contain a definition for `indexOf' and no extension method `indexOf' of type `string' could be found (are you missing a using directive or an assembly reference?)
-Compilation failed: 1 error(s), 0 warnings
+..F
+Tests run: 2, Failures: 1, Not run: 0, Time: 0.063 seconds
+
+Test Case Failures:
+1) UntitledTest.CellWithTwoLivingNeighboursLives : System.IndexOutOfRangeException : Array index is out of range.
+at Game.GenerateArrays (System.String input) [0x00000]
+at Game.NextGeneration (System.String input) [0x00000]
+at UntitledTest.CellWithTwoLivingNeighboursLives () [0x00000]
+at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[],System.Exception&)
+at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000]
+
+
