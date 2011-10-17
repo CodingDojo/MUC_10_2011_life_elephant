@@ -1,8 +1,11 @@
 using System;
+using System.Text;
+using System.Collections.Generic;
 
 public class Game
 {
     private bool[,] originalArray;
+    private bool[,] resultArray;
     private int width;
     private int height;
 
@@ -10,7 +13,25 @@ public class Game
     public string NextGeneration(string input)
     {
         this.GenerateOriginalArray(input);
-        return "..\n..";
+        // Something useful
+        this.resultArray = this.originalArray;
+        return GenerateResult();
+    }
+
+    private string GenerateResult()
+    {
+        var lines = new List<string>();
+        for(var y = 0; y < height; y++)
+        {
+            string line = "";
+            for(var x = 0; x < height; x++)
+            {
+                var field = resultArray[x,y] ? "*" : ".";
+                line += field;
+            }
+            lines.Add(line);
+        }
+        return string.Join("\n", lines.ToArray());
     }
 
     private void GenerateOriginalArray(string input)
