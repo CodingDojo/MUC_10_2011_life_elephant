@@ -5,11 +5,12 @@ using NUnit.Framework;
 public class UntitledTest
 {
     [Test]
-    public void HitchHiker()
+    public void CellWithLessThanTwoLivingNeighboursDies()
     {
-        int expected = 6 * 9;
-        int actual = Untitled.Answer;
-        Assert.AreEqual(expected, actual);
+        string input = "*.\n..";
+        string result = new Game().NextGeneration(input);
+        string expected = "..\n..";
+        Assert.AreEqual(expected, result);
     }
 }
 

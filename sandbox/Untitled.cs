@@ -1,8 +1,9 @@
+using System;
 
-public class Untitled
+public class Game
 {
-    public static int Answer
+    public string NextGeneration(string input)
     {
-        get { return 42; }
+        return "..\n..";
     }
 }
