@@ -63,7 +63,7 @@ public class UntitledTest
     {
         string input = "***\n.*.\n***";
         string result = new Game().NextGeneration(input);
-        string input = "***\n...\n***";
+        string expected = "***\n...\n***";
         Assert.AreEqual(expected, result);
     }
 
