@@ -68,8 +68,8 @@ public class Game
     private void GenerateArrays(string input)
     {
         string[] lines = input.Split('\n');
-        this.width = lines.Length;
-        this.height = lines[0].Length;
+        this.width = lines[0].Length;
+        this.height = lines.Length;
         
         originalArray = new bool[this.width, this.height];        
         resultArray = new bool[this.width, this.height];        
@@ -77,9 +77,7 @@ public class Game
         {
             for(int y = 0; y < this.height; y++)
             {
-
-                string line = lines[y];
-continue;
+                string line = lines[y]
                 originalArray[x,y] = line[x] == '*';
             }
         }

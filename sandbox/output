@@ -1,11 +1,9 @@
-Untitled.cs(78,22): warning CS0162: Unreachable code detected
-Untitled.cs(80,13): warning CS0162: Unreachable code detected
 Untitled.cs(83,17): warning CS0162: Unreachable code detected
 Untitled.cs(28,18): warning CS0169: The private method `Game.TestCell(int, int)' is never used
 Untitled.cs(52,20): warning CS0169: The private method `Game.GenerateResult()' is never used
-Compilation succeeded - 5 warning(s)
+Compilation succeeded - 3 warning(s)
 .F.F
-Tests run: 2, Failures: 2, Not run: 0, Time: 0.066 seconds
+Tests run: 2, Failures: 2, Not run: 0, Time: 0.069 seconds
 
 Test Case Failures:
 1) UntitledTest.CellWithLessThanTwoLivingNeighboursDies :   Expected string length 5 but was 0. Strings differ at index 0.
@@ -17,11 +15,9 @@ at UntitledTest.CellWithLessThanTwoLivingNeighboursDies () [0x00000]
 at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[],System.Exception&)
 at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000]
 
-2) UntitledTest.CellWithTwoLivingNeighboursLives :   Expected string length 3 but was 0. Strings differ at index 0.
-  Expected: ".*."
-  But was:  <string.Empty>
-  -----------^
-
+2) UntitledTest.CellWithTwoLivingNeighboursLives : System.IndexOutOfRangeException : Array index is out of range.
+at Game.GenerateArrays (System.String input) [0x00000]
+at Game.NextGeneration (System.String input) [0x00000]
 at UntitledTest.CellWithTwoLivingNeighboursLives () [0x00000]
 at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[],System.Exception&)
 at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000]
