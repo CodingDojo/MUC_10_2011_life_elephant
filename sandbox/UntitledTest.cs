@@ -68,7 +68,7 @@ public class UntitledTest
     }
 
     [Test]
-    public void CellWithMoreThanThreeIn2x2GridLivingNeighboursDies()
+    public void DeadCellWithThreeNeighboursIn2x2GridLivingNeighboursLives()
     {
         string input = "*.\n**\n**";
         string result = new Game().NextGeneration(input);
