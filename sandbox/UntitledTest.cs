@@ -32,6 +32,15 @@ public class UntitledTest
     }
 
     [Test]
+    public void CellWithTwoLivingDiagonallyArrangedNeighboursLives()
+    {
+        string input = "*..\n.*.\n..*";
+        string result = new Game().NextGeneration(input);
+        string expected = "...\n.*.\n...";
+        Assert.AreEqual(expected, result);
+    }
+
+    [Test]
     public void CellWithThreeLivingNeighboursLives()
     {
         string input = "**\n**";
