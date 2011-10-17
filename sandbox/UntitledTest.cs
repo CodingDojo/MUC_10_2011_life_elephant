@@ -57,5 +57,16 @@ public class UntitledTest
         string expected = "**\n**";
         Assert.AreEqual(expected, result);
     }
+
+    [Test]
+    public void CellWithMoreThanThreeLivingNeighboursDies()
+    {
+        string input = "*.\n**\n**";
+        string result = new Game().NextGeneration(input);
+        string expected = "*.\n.*\n**";
+        Assert.AreEqual(expected, result);
+    }
+
+
 }
 
