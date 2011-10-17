@@ -38,6 +38,8 @@ public class Game
         int result = 0;
         if (SafeIsNeighbour(x - 1, y)) result += 1;
         if (SafeIsNeighbour(x + 1, y)) result += 1;
+        if (SafeIsNeighbour(x, y - 1)) result += 1;
+        if (SafeIsNeighbour(x, y + 1)) result += 1;
         return result;
     }
 
@@ -45,6 +47,8 @@ public class Game
     {
         if (x < 0) return false;
         if (x >= width) return false;
+        if (y < 0) return false;
+        if (y >= height) return false;
         return originalArray[x, y];
     }
 
