@@ -45,7 +45,7 @@ public class Game
     {
         if (x < 0) return false;
         if (x >= width) return false;
-        return originalArray[x, y];
+        return originalArray[x, 0];
     }
 
     private string GenerateResult()
