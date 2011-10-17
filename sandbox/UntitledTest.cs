@@ -61,9 +61,9 @@ public class UntitledTest
     [Test]
     public void CellWithMoreThanThreeLivingNeighboursDies()
     {
-        string input = "*.\n**\n**";
+        string input = "***\n.*.\n***";
         string result = new Game().NextGeneration(input);
-        string expected = "*.\n.*\n**";
+        string input = "***\n...\n***";
         Assert.AreEqual(expected, result);
     }
 
