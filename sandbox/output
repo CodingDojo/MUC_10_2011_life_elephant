@@ -1,5 +1,10 @@
+Untitled.cs(12,18): warning CS0219: The variable `lines' is assigned but its value is never used
+Untitled.cs(5,21): warning CS0169: The private field `Game.originalArray' is never used
+Untitled.cs(6,17): warning CS0169: The private field `Game.width' is never used
+Untitled.cs(7,17): warning CS0169: The private field `Game.height' is never used
+Compilation succeeded - 4 warning(s)
 ..F
-Tests run: 2, Failures: 1, Not run: 0, Time: 0.066 seconds
+Tests run: 2, Failures: 1, Not run: 0, Time: 0.060 seconds
 
 Test Case Failures:
 1) UntitledTest.CellWithTwoLivingNeighboursLives :   Expected string length 3 but was 5. Strings differ at index 1.
