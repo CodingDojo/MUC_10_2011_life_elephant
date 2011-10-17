@@ -17,11 +17,11 @@ public class Game
         {
             for(var y = 0; y < height; y++)
             {
-                //this.resultArray[x, y] = TestCell(x, y);
+                this.resultArray[x, y] = TestCell(x, y);
             }
         }        
 
-        //return GenerateResult();
+        return GenerateResult();
     return "";
     }
 
