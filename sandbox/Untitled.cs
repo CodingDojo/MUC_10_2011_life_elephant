@@ -22,7 +22,6 @@ public class Game
         }        
 
         return GenerateResult();
-    return "";
     }
 
     private bool TestCell(int x, int y)
@@ -55,7 +54,7 @@ public class Game
         for(var y = 0; y < height; y++)
         {
             string line = "";
-            for(var x = 0; x < height; x++)
+            for(var x = 0; x < width; x++)
             {
                 var field = resultArray[x,y] ? "*" : ".";
                 line += field;
