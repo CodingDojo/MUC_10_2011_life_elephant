@@ -17,11 +17,12 @@ public class Game
         {
             for(var y = 0; y < height; y++)
             {
-                this.resultArray[x, y] = TestCell(x, y);
+                //this.resultArray[x, y] = TestCell(x, y);
             }
         }        
 
-        return GenerateResult();
+        //return GenerateResult();
+return "";
     }
 
     private bool TestCell(int x, int y)
@@ -45,7 +46,6 @@ public class Game
     {
         if (x < 0) return false;
         if (x >= width) return false;
-        return false;
         return originalArray[x, y];
     }
 

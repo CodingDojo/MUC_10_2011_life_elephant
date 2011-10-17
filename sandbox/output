@@ -1,5 +1,7 @@
+Untitled.cs(49,9): warning CS0162: Unreachable code detected
+Compilation succeeded - 1 warning(s)
 ..F
-Tests run: 2, Failures: 1, Not run: 0, Time: 0.062 seconds
+Tests run: 2, Failures: 1, Not run: 0, Time: 0.057 seconds
 
 Test Case Failures:
 1) UntitledTest.CellWithTwoLivingNeighboursLives : System.IndexOutOfRangeException : Array index is out of range.
