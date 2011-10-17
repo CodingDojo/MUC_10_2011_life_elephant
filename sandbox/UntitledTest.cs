@@ -12,5 +12,14 @@ public class UntitledTest
         string expected = "..\n..";
         Assert.AreEqual(expected, result);
     }
+
+    [Test]
+    public void CellWithTwoLivingNeighboursLives()
+    {
+        string input = "***";
+        string result = new Game().NextGeneration(input);
+        string expected = ".*.";
+        Assert.AreEqual(expected, result);
+    }
 }
 
