@@ -17,12 +17,11 @@ public class Game
         {
             for(var y = 0; y < height; y++)
             {
-                //this.resultArray[x, y] = TestCell(x, y);
+                this.resultArray[x, y] = TestCell(x, y);
             }
         }        
 
-        //return GenerateResult();
-return "";
+        return GenerateResult();
     }
 
     private bool TestCell(int x, int y)
@@ -67,7 +66,16 @@ return "";
 
     private void GenerateArrays(string input)
     {
-        string[] lines = input.Split('\n');
+        string[] lines;
+        if(input.indexOf("\n") > -1)
+        {
+            lines = input.Split('\n');
+        }
+        else
+        {
+            lines = new [] { input };
+        }
+
         this.width = lines.Length;
         this.height = lines[0].Length;
         
