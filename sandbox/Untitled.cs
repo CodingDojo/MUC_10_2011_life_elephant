@@ -13,8 +13,14 @@ public class Game
     public string NextGeneration(string input)
     {
         this.GenerateOriginalArray(input);
-        // Something useful
-        this.resultArray = this.originalArray;
+        for(var x = 0; x < width; x++)
+        {
+            for(var y = 0; y < height; y++)
+            {
+                this.resultArray[x, y] = TestCell(x, y);
+            }
+        }        
+
         return GenerateResult();
     }
 
