@@ -12,7 +12,7 @@ public class Game
 
     public string NextGeneration(string input)
     {
-        this.GenerateOriginalArray(input);
+        this.GenerateArrays(input);
         for(var x = 0; x < width; x++)
         {
             for(var y = 0; y < height; y++)
@@ -64,13 +64,14 @@ public class Game
         return string.Join("\n", lines.ToArray());
     }
 
-    private void GenerateOriginalArray(string input)
+    private void GenerateArrays(string input)
     {
         string[] lines = input.Split('\n');
         this.width = lines.Length;
         this.height = lines[0].Length;
         
         originalArray = new bool[this.width, this.height];        
+        resultArray = new bool[this.width, this.height];        
 
         for(int x = 0; x < this.width; x++)
         {
